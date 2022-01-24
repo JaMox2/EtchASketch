@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*border: 1px solid black;*/
+    
+  
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Acme', sans-serif;
+}
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.left-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.mid-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.grid {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 5px 10px 8px;
+  
+}
+.right-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.settings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    width: 200px;
+}
+.btn {
+    width: 10em;
+    height: 5em;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05, 1.05);
+}
+.active {
+    background-color: #333;
+    color: #FFFFFF
+}
+
+.box-box {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 180px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid black;
+    height: 20px;
+    width: 16px;
+    border-radius: 360px;
+    background: #ffffff;
+    cursor: pointer;
+}
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=checkbox]:checked {
+    font-family: 'Acme', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+/*
+.gridPart {
+    border: 0.5px solid #333;
+}
+*/
+
+
+
+/*HEADER AND FOOTER*/
+header {
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em 0em;
+}
+footer {
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em 0em;
+    
+}
+
+/*color picker*/
+.h-color {
+    font-size: 34px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    white-space: nowrap;
+  
+  
+}
+b { 
+    font-size: 25px;
+    background: #333;
+    color: white;
+    padding: 12px;
+    border-radius: 26px;
+    font-family: 'Acme', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+#colorode {
+    background-color: #FF0000;
+    border: 1px solid #FFFFFF;
+    width: 50px;
+    height: 50px;
+}
+
+.fa-github {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+  
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+/*------------------------------media MAYBE NEVER...------------------------------*/
